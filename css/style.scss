@@ -1,0 +1,395 @@
+$section4 : #F0EBE6;
+$card-background: #161616;
+$input: #1E2124;
+
+
+
+
+@mixin flex($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+//   --------------------------------
+
+
+/* Style The Dropdown Button */
+.dropbtn2 {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn3 {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {background-color: #f1f1f1}
+  .dropdown-content3 a:hover {background-color: #f1f1f1}
+
+  
+  
+  .dropdown{
+    button {
+        @include flex(flex, center, space-between);
+        gap: 0.5em
+    }
+  }
+
+.nav-section{
+    @include flex(flex, center, space-between);
+}
+
+.nav-item-2 {
+    @include flex(flex, center, space-between);
+    gap: 1em;
+}
+
+.nav-section{
+    button {
+        a{
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (min-width: 780px) {
+    .dropdown2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .nav-item-2 {
+        display: none;
+    }
+
+    .hero-text {
+      font-size: 2.5rem;
+    }
+}
+
+// -------------------------------------------------------
+.section2{
+    background-color: #c3f53d;
+}
+
+.section2 {
+    button {
+        color: white;
+    }
+}
+
+// -------------------------------------------------------
+.section3{
+  @include flex(flex, center, space-around);
+}
+
+.section3-content {
+  @include flex(flex, center, start);
+  gap: 0.5em;
+  padding-bottom: 1em;
+}
+
+
+.section3-main {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.section3-secondary {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 750px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// -------------------------------------------------------
+.section4 {
+  background-color: $section4;
+}
+
+.section4-main {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.section4-secondary {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.section4-stuff {
+  display: flex;
+}
+
+.section4-content {
+  @include flex(flex, center, space-between);
+}
+
+
+@media screen and (max-width: 900px) {
+  .section4-main{
+    font-size: 1em;
+  }
+
+  .section4-secondary {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .section4-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    div {
+      img {
+        display:none;
+      }
+    }
+
+    div {
+      padding-top: 1em;
+    }
+
+  }
+}
+
+// -------------------------------------------------------
+.section5 {
+  background-color:black;
+}
+
+.section5 {
+  p {
+    color: white;
+  }
+}
+
+.card-section {
+  @include flex(flex, center, space-around);
+}
+
+.card {
+  background-color: $card-background;
+}
+
+.card-header-text {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.address {
+  color: gray;
+}
+
+.card-info-1 {
+  @include flex(flex, center, space-between);
+  padding-top: 1em;
+}
+
+.card-info-sub {
+  @include flex(flex, center, space-evenly);
+}
+
+.card {
+  button {
+    background-color: #c3f53d;
+    padding: 0.5em 5em;
+  }
+}
+
+.card-btn {
+  padding-top: 2em;
+  display: flex;
+ justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container {
+    padding-top: 2em;
+  }
+}
+
+// -------------------------------------------------------
+.section6 {
+  background-color: $section4;
+  @include flex(flex, center, space-around);
+}
+
+.section6 {
+  div, p {
+    padding-top: 1em;
+  }
+
+  button {
+    color: white;
+    padding: 0.5em 1.5em;
+  }
+}
+
+@media screen and (max-width: 900px ) {
+  .section6 {
+    display:flex;
+    flex-direction: column;
+  }
+  
+}
+
+// -------------------------------------------------------
+.section7{
+  background-color: black;
+
+  p {
+    color: white;
+    padding-top: 0.5em;
+  }
+
+  img{
+    padding-bottom: 1em;
+  }
+
+  .robin {
+    padding-top: 2em;
+    display: flex;
+    justify-content:center;
+  }
+}
+
+
+.section7-content {
+  @include flex(flex, start, space-around);
+  padding-bottom: 2em;
+}
+
+form {
+  padding-top: 1.5em;
+}
+
+.input {
+  background-color: $input;
+}
+
+.form-button {
+  background-color: #00C805;
+}
+
+@media screen and (max-width: 900px ) {
+  .section7-content {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .section7-img {
+    display:flex;
+    justify-content:center;
+  }
+
+  // .section7 {
+  //   display: none;
+  // }
+  
+}
