@@ -316,9 +316,7 @@ $input: #1E2124;
 .section6 {
   background-color: $section4;
   @include flex(flex, center, space-around);
-}
 
-.section6 {
   div, p {
     padding-top: 1em;
   }
@@ -328,6 +326,7 @@ $input: #1E2124;
     padding: 0.5em 1.5em;
   }
 }
+
 
 @media screen and (max-width: 900px ) {
   .section6 {
@@ -388,8 +387,5 @@ form {
     justify-content:center;
   }
 
-  // .section7 {
-  //   display: none;
-  // }
   
 }
